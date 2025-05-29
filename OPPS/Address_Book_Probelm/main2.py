@@ -12,8 +12,7 @@ class Person:
     
 class AddressBook:
     def __init__(self):
-        self.contacts = []  # Use a list to store Person objects
-
+        self.contacts = []  
     def add_contact(self, person):
         if person not in self.contacts:
             self.contacts.append(person)
