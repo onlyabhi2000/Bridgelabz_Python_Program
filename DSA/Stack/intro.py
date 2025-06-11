@@ -50,3 +50,39 @@ print(stack_obj.peek())
 stack_obj.pop()    
 print(stack_obj.print())  
 print(stack_obj.size())       
+
+
+
+"""
+1. What are Infix, Prefix, and Postfix?
+🔹 Infix Notation (Most Common - Human Style)
+Operators are between operands
+
+Example:
+
+css
+Copy
+Edit
+A + B
+(A + B) * C
+🔹 Prefix Notation (Polish Notation)
+Operators are before the operands
+
+Example:
+
+css
+Copy
+Edit
++ A B
+* + A B C
+🔹 Postfix Notation (Reverse Polish Notation)
+Operators are after the operands
+
+Example:
+
+css
+Copy
+Edit
+A B +
+A B + C *
+"""
