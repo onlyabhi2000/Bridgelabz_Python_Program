@@ -3,11 +3,20 @@ Why Linked Lists?
 Linked lists were created to overcome various drawbacks associated with storing data in regular lists and arrays, as outlined below:
 
 Ease of insertion and deletion
-In lists, inserting or deleting an element at any position other than the end requires shifting all the subsequent items to a different position. This process has a time complexity of O(n) and can significantly degrade performance, especially as the list size grows. If you aren’t already familiar with how lists work or their implementation, you can read our tutorial on Python lists.
+In lists, inserting or deleting an element at any position other than the end requires shifting all the subsequent items to a different position.
+ This process has a time complexity of O(n) and can significantly degrade performance,
+   especially as the list size grows. If you aren’t already familiar with how lists work or their implementation, you can read our tutorial on Python lists.
 
-Linked lists, however, operate differently. They store elements in various, non-contiguous memory locations and connect them through pointers to subsequent nodes. This structure allows linked lists to add or remove elements at any position by simply modifying the links to include a new element or bypass the deleted one.
+Linked lists, however, operate differently. They store elements in various, non-contiguous memory locations and connect them through pointers to subsequent nodes. 
+This structure allows linked lists to add or remove elements at any position by simply modifying the links to include a new element or bypass the deleted one.
 
 Once the position of the element is identified and there is direct access to the point of insertion or deletion, adding or removing nodes can be achieved in O(1) time.
+
+Advantages of Linked List:
+
+A linked list is a dynamic data structure that can grow and shrink in size at runtime by allocating and deallocating memory. As a result, there is no need to specify the linked list's initial size.
+There is no memory wastage in the linked list since the size of the linked list increases or decreases at run time, hence there is no memory wastage and no need to pre-allocate memory.
+
 """
 
 """
@@ -95,14 +104,21 @@ class Linkedlist:
             current = current.next
             position+=1
         return f"element is not present"
+    
+    ## method to get the length of the linked list
+
+    def getLength(self):
+        count = 0
+        current = self.head # starting node
+
+        while current:
+            current= current.next
+            count+=1
+        return count
 
 
 
 
-    # def insert(self,data):
-    #     new_node = Node(data)
-    #     new_node.next = self.head
-    #     self.head = new_node
 
 
 ##Driver code
@@ -126,3 +142,4 @@ print(presult)
 search_result = list_obj.search('2')
 print(search_result)
 
+print(list_obj.getLength())
