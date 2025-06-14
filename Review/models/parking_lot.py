@@ -1,4 +1,5 @@
 import heapq
+
 from .slot import Slot
 from .ticket import ParkingTicket
 
@@ -53,6 +54,7 @@ class ParkingLot:
 
         slot.release()
         heapq.heappush(self.free_slots_heap, slot.slot_id)
+
 
         print(f" vwhicle {vehicle_number} removed .")
         print(f"Ticket Info:  {ticket}")
