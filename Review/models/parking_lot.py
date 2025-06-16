@@ -1,5 +1,5 @@
 import heapq
-
+ 
 from .slot import Slot
 from .ticket import ParkingTicket
 
