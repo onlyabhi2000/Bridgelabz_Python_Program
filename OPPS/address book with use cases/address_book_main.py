@@ -2,6 +2,7 @@ from addresbook import AddressBook
 from person import Person
 import json
 import csv
+from regex_validate import validate_input , validate_person_data
 
 class AddressBookMain:
     def __init__(self):
@@ -16,6 +17,11 @@ class AddressBookMain:
         self.address_books[name] = AddressBook(name)
         print(f"Address book '{name}' created successfully.")
 
+    def get_person_data(self):
+        return Person.from_user_input()
+    #decorator to validate the input data 
+    @validate_input
+
     def add_contact(self):
         book_name = input("Enter theaddress book name: ").strip()
         if book_name not in self.address_books:
@@ -24,6 +30,9 @@ class AddressBookMain:
         
         person = Person.from_user_input()
         self.address_books[book_name].add_contact(person)
+        print("Contact added.")
+        return True
+
 
     def edit_contact(self):
         book_name = input("Enter address book name: ").strip()
@@ -298,3 +307,5 @@ class AddressBookMain:
 if __name__ == "__main__":
     app = AddressBookMain()
     app.run()
+
+

@@ -56,7 +56,7 @@ def test_get_user_success(mock_get):
 def test_get_user_error(mock_get):
     # Simulate failed response
     mock_response = mock.Mock()
-    mock_response.status_code = 404  # ❌ not 200
+    mock_response.status_code = 404
     mock_get.return_value = mock_response
 
     # Now test that the function raises HTTPError

@@ -35,9 +35,6 @@ re.DOTALL (or re.S) — . matches newline
 Compiling Patterns
 You can pre-compile a pattern for repeated use:
 
-python
-Copy
-Edit
 pattern = re.compile(r'\d+')
 result = pattern.findall('123 abc 456')
 print(result)  
