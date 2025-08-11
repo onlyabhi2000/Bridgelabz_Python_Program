@@ -1,5 +1,5 @@
 """  
-compares adjacent element and  if a[j] < a[j+1] then swap the elements 
+compares adjacent element and  if a[j] > a[j+1] then swap the elements 
 Time Complexity : O(n2)
 
 """

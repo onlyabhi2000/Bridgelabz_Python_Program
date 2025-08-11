@@ -15,11 +15,11 @@ class Square(Shape):
     
 
 class Circle(Shape):
-        def __init__(self , radius):
-             self.radius = radius
-        
-        def area(self):
-             return 3.14 *self.radius * self.radius
+    def __init__(self , radius):
+            self.radius = radius
+    
+    def area(self):
+            return 3.14 *self.radius * self.radius
         
 square_obj = Square(2,3)
 print(square_obj.area())

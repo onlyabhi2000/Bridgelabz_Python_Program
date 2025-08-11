@@ -60,9 +60,6 @@ Operators are between operands
 
 Example:
 
-css
-Copy
-Edit
 A + B
 (A + B) * C
 🔹 Prefix Notation (Polish Notation)
@@ -70,9 +67,6 @@ Operators are before the operands
 
 Example:
 
-css
-Copy
-Edit
 + A B
 * + A B C
 🔹 Postfix Notation (Reverse Polish Notation)
@@ -80,9 +74,6 @@ Operators are after the operands
 
 Example:
 
-css
-Copy
-Edit
 A B +
 A B + C *
 """

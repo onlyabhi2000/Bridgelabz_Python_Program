@@ -47,3 +47,19 @@ def balance_parenthesis(expression):
 # Test
 expression = '{[())]}'
 print(balance_parenthesis(expression))  
+
+
+
+"""
+Steps:
+Loop through each character in the expression.
+
+If it’s an opening bracket ((, {, [), push it to the stack.
+
+If it’s a closing bracket (), }, ]):
+
+Pop the top of the stack.
+
+Check if the popped item matches the corresponding opening bracket.
+
+At the end, if the stack is empty, the expression is balanced."""
