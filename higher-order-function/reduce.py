@@ -2,7 +2,7 @@
 
 #Syntax : 
 # import functools
-# functools.reduce(function_name , iterable
+# functools.reduce(function_name , iterable)
 
 
 import functools

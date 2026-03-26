@@ -3,7 +3,7 @@
 #  This approach helps in reducing the complexity and increasing the efficiency of application development.
 
 ##Note## --> there is no build in class in python to achieve Abstract class
-# But can achiev suing a module class ABC
+# But can achieve using a module class ABC
 
 ## Abstract class : Method tha has a declaration but does not have an implementaion
 ## Concete class : Normal method which conatins the implementation
