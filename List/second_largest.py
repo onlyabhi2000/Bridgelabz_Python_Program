@@ -14,3 +14,16 @@ print(second_largest)
 
 
 
+# Your solution has two separate loops, and each loop iterates through the entire list once.”
+
+# First loop → O(n)
+
+# Second loop → O(n)
+
+# So total time complexity is:
+
+# O(n + n) = O(2n)
+
+# In Big-O notation, we ignore constants, so the final time complexity is:
+
+# O(n)
